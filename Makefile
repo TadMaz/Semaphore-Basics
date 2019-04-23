@@ -26,6 +26,9 @@ all: Barrier.class\
 doc: all
 	javadoc -d $(DOCDIR) $(SRCDIR)/*.java
 
+run:
+	java ~bin/BarrierS/BarrierTest
+	
 clean:
 	@rm -f $(BINDIR)/*.class
 	@rm -f doc/*
